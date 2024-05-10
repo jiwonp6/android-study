@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".practice01.Layout02Activity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 1" />
+
+    <!-- match_parent: 부모 객체의 크기 전체 -->
+    <!-- 특정 수치로 크기를 지정할 수 있음 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="가로로 긴 버튼 2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- 뷰의 간격 설정 -->
+        <!-- padding: 뷰 내부 요소의 여백 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingRight="8dp"
+            android:text="버튼" />
+
+        <!-- margin: 뷰 외부 요소의 여백 (부모 컨테이너 내에서) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginLeft="40dp"
+            android:text="버튼" />
+
+        <!-- 텍스트 및 배경 색상 지정 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
+            android:text="버튼"
+            android:textColor="#FF9800" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".practice01.Layout01Activity"
+    android:orientation="vertical">
+
+<!--  레이아웃을 통해 뷰 객체를 묶어 방향 등을 한꺼번에 제어  -->
+<!--  id 속성을 통해 식별자 부여  -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼1"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼2"/>
+
+<!--  레이아웃 중첩 가능  -->
+<!--  composite 패턴: 객체를 계층 구조로 만들어 이용하는 패턴  -->
+<!--  문서 객체 모델 (Document Object Model: DOM)  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼3"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼4"/>
+
+    </LinearLayout>
+
+</LinearLayout>
