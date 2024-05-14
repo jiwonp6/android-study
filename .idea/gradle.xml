@@ -11,6 +11,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ch01_layout" />
+            <option value="$PROJECT_DIR$/ch02_event" />
+            <option value="$PROJECT_DIR$/ch03_resource" />
+            <option value="$PROJECT_DIR$/ch04_permission" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

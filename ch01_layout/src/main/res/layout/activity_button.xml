@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".pr01.ButtonActivity">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="버튼"/>
+    <!--   체크박스 : 다중선택, 각각 선택에 영향 미치지 않음   -->
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="체크박스1"/>
+    <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="체크박스2"/>
+    <!--   그룹으로 묶은 버튼 중 하나만 선택 가능   -->
+    <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="라디오1"/>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="라디오2"/>
+    </RadioGroup>
+    <!--   토글 / 스위치 : On/Off 상태  전환  -->
+    <ToggleButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOff="꺼짐" android:textOn="켜짐"/>
+    <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:switchMinWidth="60dp" android:thumbTint="#FF0000" android:trackTint="#0000FF"/>
+</LinearLayout>

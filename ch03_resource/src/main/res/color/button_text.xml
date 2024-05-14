@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 특정 뷰의 상태에 따라 적용되는 색상을 등록할 때 사용 -->
+    <item
+        android:state_pressed="true"
+        android:color="#FF0"/>
+    <item android:color="#F00"/>
+</selector>

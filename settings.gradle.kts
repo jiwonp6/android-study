@@ -22,3 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "android-study"
 include(":app")
 include(":ch01_layout")
+include(":ch02_event")
+include(":ch03_resource")
+include(":ch04_permission")
