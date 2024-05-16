@@ -5,9 +5,21 @@
         사용자 위치 추적
         ACCESS_FINE_LOCATION: 대략적인 위치 정보 제공 (wifi, 네트워크, 날씨 등)
         ACCESS_COARSE_LOCATION: 고정밀 위치 정보 제공 (GPS, wifi, 네트워크, 지도 등)
+        INTERNET: 인터넷에 접근할 수 있는 권한
+        READ_CONTACTS: 사용자의 연락처 데이터를 읽을 수 있는 권한
+        WRITE_CONTACTS: 사용자의 연락처 데이터를 수정할 수 있는 권한
+        READ_EXTERNAL_STORAGE: 외부 저장소의 파일을 읽을 수 있는 권한
+        WRITE_EXTERNAL_STORAGE: 외부 저장소의 파일을 쓸 수 있는 권한
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -16,6 +28,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
+        <activity
+            android:name=".Permission02Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Permission01Activity"
             android:exported="true">
