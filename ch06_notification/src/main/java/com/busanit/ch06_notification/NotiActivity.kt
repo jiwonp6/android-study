@@ -29,6 +29,7 @@ class NotiActivity : AppCompatActivity() {
                 }
             }
 
+        // 버튼 클릭 시 수행
         binding.button.setOnClickListener {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
                 notification()
