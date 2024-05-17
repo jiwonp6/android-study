@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 진동 권한 사용 선언 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
-
-    <!-- 알림 권한 사용 선언 -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
         <activity
-            android:name=".NotiStyleActivity"
+            android:name=".ToolBarActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +18,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TestActivity"
+            android:name=".UpSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".PendingActivity"
+            android:name=".UpButtonActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NotiActivity"
+            android:name=".ActionBarActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,8 +39,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RingtonActivity"
-            android:exported="true">
+            android:name=".ThemeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Test01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
