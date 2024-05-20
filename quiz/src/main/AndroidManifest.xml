@@ -9,10 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
         <activity
-            android:name=".ChildActivity"
+            android:name="com.busanit.ch07_appbar.ex.ChildActivity"
             android:exported="false"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.busanit.ch07_appbar.ex.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
