@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/ch06_notification" />
             <option value="$PROJECT_DIR$/ch07_appbar" />
             <option value="$PROJECT_DIR$/ch08_activity" />
+            <option value="$PROJECT_DIR$/ch09_recycler_view" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
