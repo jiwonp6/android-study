@@ -9,6 +9,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
         <activity
+            android:name=".recycler.TabRecyclerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".tab_layout.TabActivity"
             android:exported="true">
             <intent-filter>
