@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/ch08_activity" />
             <option value="$PROJECT_DIR$/ch09_recycler_view" />
             <option value="$PROJECT_DIR$/ch10_fragment" />
+            <option value="$PROJECT_DIR$/quiz" />
+            <option value="$PROJECT_DIR$/quiz2" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

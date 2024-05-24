@@ -1,29 +1,26 @@
-package com.busanit.ch10_fragment.recycler
+package com.busanit.quiz2
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.busanit.ch10_fragment.databinding.ActivityTabRecyclerBinding
-import com.busanit.ch10_fragment.pager.Fragment2
-import com.busanit.ch10_fragment.pager.Fragment3
+import com.busanit.quiz2.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
-class TabRecyclerActivity : AppCompatActivity() {
-    lateinit var binding: ActivityTabRecyclerBinding
+class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
 
-    // 표시할 프래그먼트를 담을 리스트
     val fragmentList = mutableListOf<Fragment>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTabRecyclerBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // 사용할 프래그먼트
-        fragmentList.add(FragmentRecycler())
-        fragmentList.add(Fragment2())
-        fragmentList.add(Fragment3())
+        fragmentList.add(FirstFragment())
+        fragmentList.add(SecondFragment())
+        fragmentList.add(ThirdFragment())
 
-        binding.pager2.adapter = TabAdapter(this, fragmentList)
+        binding.pager2.adapter = MyFragmentStateAdapter(this, fragmentList)
 
         // 탭 이름 설정
         val tabName = arrayOf("첫 번째 탭", "두 번째 탭", "세 번째 탭")
@@ -34,5 +31,6 @@ class TabRecyclerActivity : AppCompatActivity() {
                     tab, position -> tab.text = tabName[position]   // 탭의 이름 설정
             }.attach()
         }
+
     }
 }
