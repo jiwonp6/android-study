@@ -1,7 +1,7 @@
 package com.busanit.quiz
 
-import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.busanit.quiz.databinding.ActivityDetailBinding
 
@@ -15,14 +15,13 @@ class DetailActivity : AppCompatActivity() {
         binding.run {
             val editText = intent.getStringExtra("editText")
             val check = intent.getBooleanExtra("checkBox", false)
+            Log.d("mylog", "onCreate: $check")
             textView.text = editText
             checkBox.isChecked = check
         }
 
         binding.button.setOnClickListener {
-            val intent = Intent(this@DetailActivity, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
-
     }
 }

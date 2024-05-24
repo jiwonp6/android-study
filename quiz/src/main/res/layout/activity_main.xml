@@ -15,7 +15,7 @@
         <EditText
             android:id="@+id/editText"
             android:orientation="horizontal"
-            android:layout_width="330dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"/>
         <Button
