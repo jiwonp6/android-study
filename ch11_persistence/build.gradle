@@ -1,0 +1,58 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    id 'kotlin-kapt'    // kapt 추가
+}
+
+android {
+    namespace 'com.busanit.ch11_persistence'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.busanit.ch11_persistence"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding { enable = true }
+}
+
+dependencies {
+    // ------- Room 을 사용하기 위한 의존성 추가 ------
+    def room_version = "2.6.1"      // 버전 설정
+
+    implementation "androidx.room:room-runtime:$room_version"       // 런타임 라이브러리
+    annotationProcessor "androidx.room:room-compiler:$room_version" // 애노태이션 컴파일러
+    implementation "androidx.room:room-ktx:$room_version"           // 코틀린 확장 기능
+
+    // To use Kotlin annotation processing tool (kapt)
+    // builds.gradle 상단항목  plugins { ...  id 'kotlin-kapt'    // kapt 추가 }
+    kapt "androidx.room:room-compiler:$room_version"
+    // ---------- Room 의존성 추가 -----------------
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+}
