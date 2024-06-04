@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
         <activity
+            android:name=".news.NewsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".glide.GlideActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".retrofit.activity.NewPostActivity"
             android:exported="false" />
         <activity
