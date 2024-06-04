@@ -23,11 +23,8 @@ class PostAdapter(val posts: List<Post>): RecyclerView.Adapter<PostAdapter.PostV
                 val intent = Intent(context, CommentActivity::class.java)
                 intent.putExtra("postId", post.id)
                 context.startActivity(intent)
-
-
             }
         }
-
     }
 
     // XML 레이아웃을 인플레이트하여 뷰홀더 객체의 매개변수로 넣어 뷰홀더를 생성 반환
