@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidstudy">
         <activity
+            android:name=".retrofit.activity.NewPostActivity"
+            android:exported="false" />
+        <activity
             android:name=".retrofit.activity.CommentActivity"
             android:exported="false" />
         <activity
