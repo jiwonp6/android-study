@@ -22,6 +22,8 @@
             <option value="$PROJECT_DIR$/ch10_fragment" />
             <option value="$PROJECT_DIR$/ch11_persistence" />
             <option value="$PROJECT_DIR$/ch12_network" />
+            <option value="$PROJECT_DIR$/ch13_login" />
+            <option value="$PROJECT_DIR$/ch14_etc" />
             <option value="$PROJECT_DIR$/quiz" />
             <option value="$PROJECT_DIR$/quiz2" />
           </set>
